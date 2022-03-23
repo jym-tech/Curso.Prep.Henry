@@ -88,6 +88,7 @@ Las "strings" son bloques de texto, siempre se definirán entre comillas, ya sea
 ```javascript
 var nombrePerro = 'firulais';
 ```
+
 ### Numbers
 
 Los números son solo eso, números. Los números NO se envuelven en comillas. Pueden ser negativos también. Javascript tiene una limitación en el tamaño de un número (+/- 9007199254740991), pero muy raramente aparecerá esa limitación en nuestro uso diario.
@@ -275,6 +276,7 @@ function sumarDosNumeros(a, b) {
 
 sumarDosNumeros(1, 5); // 6
 ```
+
 ### Declaración "return" y Scope
 
 En el ejemplo anterior presentamos la declaración `return`. No vamos a usar `console.log` con todo lo que salga de una función. Lo más probable es que queramos devolver algo. En este caso es la suma de los dos números. Piense en la declaración de retorno ("return") como la única forma en que los datos escapan de una función. No se puede acceder a nada más que a lo que se devuelve fuera de la función. También tenga en cuenta que cuando una función golpea una declaración de retorno, la función detiene inmediatamente lo que está haciendo y "devuelve" lo especificado.
@@ -288,6 +290,7 @@ function dividirDosNumeros(a, b) {
 dividirDosNumeros(6, 3); // 2
 console.log(producto); // undefined
 ```
+
 Si intentamos `console.log` algo que declaramos dentro de la función, devolverá `undefined` porque no tenemos acceso a él fuera de la función. Esto se llama Scope ("alcance"). La única forma de acceder a algo dentro de la función es devolverlo.
 
 También podemos establecer variables para igualar lo que devuelve una función.
@@ -330,6 +333,7 @@ El símbolo "mayor que" (`>`) que ve en el último ejemplo se llama _Operador de
 _Node.js_ es un entorno de tiempo de ejecución desarrollado originalmente para su uso en servidores/back-end. Tendremos que instalarlo en nuestras máquinas para completar los próximos ejercicios. Para instalar Node, haga clic aquí: [Descargar e instalar Node.js](https://nodejs.org/en/download/). Node viene con "NPM" incluido. NPM es un administrador de paquetes ("package manager") para paquetes Javascript y lo usaremos a lo largo de nuestro aprendizaje en Henry. Una vez que hayas instalado Node.js, no necesitas hacer nada más para instalar NPM.
 
 ## Abre la carpeta "homework" y completa la tarea descrita en el archivo README
+
 [Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/02-JS-I/homework)
 
 ## Recursos adicionales

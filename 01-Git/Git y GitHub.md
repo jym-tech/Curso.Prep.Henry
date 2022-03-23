@@ -52,6 +52,7 @@ Recuerda que hay un caso muy raro donde los archivos tienen dos estados al mismo
 - **git rm**: este comando necesita algunos de los argumentos para poder ejecutarse correctamente:
 
 - **git rm --cached**: Mueve los archivos que le indiquemos al estado Untracked.
+
 - **git rm --force**: Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
 
 # Qué es un Branch y cómo funciona un Merge en Git? 🤔
@@ -85,9 +86,9 @@ Existen muchas otras configuraciones de Git que puedes encontrar en el comando g
 # Analizar cambios en los archivos de tu proyecto con Git 📈📉📊
 
     - git log: muestra la identificación de los commits.
-
+    
     - git show: nos muestra los cambios que han existido sobre un archivo y es muy útil para detectar cuando se produjeron ciertos cambios, qué se rompió y cómo lo podemos solucionar. Pero podemos ser mas detallados.
-
+    
     - git diff: nos muestra la diferencia entre una version y otra, no necesariamente todos los cambios desde la creación. (Gif diff commitA commitB).
 
 # Volver en el tiempo en nuestro repositorio utilizando reset y checkout 🏃🏻‍♀️⏱
@@ -193,7 +194,7 @@ A veces hacemos un commit, pero resulta que no queríamos mandarlo porque faltab
 ¿Qué pasa cuando todo se rompe y no sabemos qué está pasando?<br> Con git reset hashDelHEAD nos devolvemos al estado en que el proyecto funcionaba.
 
     - git reset --soft hashDelHEAD te mantiene lo que tengas en Staging ahí.
-
+    
     - git reset --hard hashDelHEAD resetea absolutamente todo incluyendo lo que tengas en Staging.
 
 Git reset es una mala práctica, no deberías usarlo en ningún momento; debe ser nuestro último recurso.
